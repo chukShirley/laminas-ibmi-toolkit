@@ -1,5 +1,6 @@
 <?php
-namespace ZfIbmiToolkit;
+
+namespace ZfIbmiToolkit\Factory;
 
 use Interop\Container\ContainerInterface;
 use ToolkitApi\Toolkit;
