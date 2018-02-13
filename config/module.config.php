@@ -4,6 +4,8 @@ use ZfIbmiToolkit\Factory\IbmiToolkitFactory;
 
 return [
     'service_manager' => [
-        Toolkit::class => IbmiToolkitFactory::class
-    ]
+        'factories' => [
+            Toolkit::class => IbmiToolkitFactory::class,
+        ],
+    ],
 ];
