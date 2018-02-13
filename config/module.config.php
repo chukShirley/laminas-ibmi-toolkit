@@ -1,6 +1,6 @@
 <?php
 use ToolkitApi\Toolkit;
-use ZfIbmiToolkit\IbmiToolkitFactory;
+use ZfIbmiToolkit\Factory\IbmiToolkitFactory;
 
 return [
     'service_manager' => [
