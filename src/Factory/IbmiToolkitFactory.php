@@ -15,25 +15,33 @@ use Zend\ServiceManager\ServiceManager;
 final class IbmiToolkitFactory implements FactoryInterface 
 {
     /**
-     * @param ContainerInterface $container
+     * @param ContainerInterface|ServiceManager $container
      * @param string $requestedName
      * @param array|null $options
      * @return Toolkit
      */
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        /** @var ServiceManager $container **/
-
         /** @var array $toolkitConfig */
         $toolkitConfig = $container->get('Config')['ibmi_toolkit'];
 
-        /** @var Adapter $databaseAdapter */
-        $databaseAdapter = $container->get($toolkitConfig['databaseAdapterService']);
-
-        $toolkit = new Toolkit(
-            $databaseAdapter->getDriver()->getConnection()->getResource(),
-            '0'
-        );
+        if ($toolkitConfig['system']['transportType'] === 'pdo') {
+            /** @var \PDO $resource */
+            $toolkit = new Toolkit(
+                $container->get($toolkitConfig['databaseAdapterService'])->getDriver()->getConnection()->getResource(),
+                null,
+                null,
+                'pdo'
+            );
+        } else {
+            $toolkit = new Toolkit(
+                $container->get($toolkitConfig['databaseAdapterService'])->getDriver()->getConnection()->getResource(),
+                1,
+                null,
+                null,
+                true
+            );
+        }
 
         $toolkit->setOptions($toolkitConfig);
 

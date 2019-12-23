@@ -287,7 +287,7 @@ return [
         /**
          * Database Adapter Service
          *
-         * If using db2 transport, specify the name of the database adapter service
+         * If using db2, odbc, or pdo transport, specify the name of the database adapter service
          * (registered in the service manager)
          */
         'databaseAdapterService' => Adapter::class,
