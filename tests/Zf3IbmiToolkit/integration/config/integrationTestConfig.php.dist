@@ -1,0 +1,7 @@
+<?php
+return [
+    'db' => [
+        'username' => 'USER',
+        'password' => 'PASSWORD',
+    ],
+];

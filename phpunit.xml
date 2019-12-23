@@ -1,0 +1,25 @@
+<phpunit
+        addUncoveredFilesFromWhitelist="true"
+        bootstrap="./vendor/autoload.php"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        verbose="true"
+        stopOnFailure="false"
+        processIsolation="false"
+        backupGlobals="false"
+        syntaxCheck="true"
+>
+    <testsuites>
+        <testsuite name="UnitTests">
+            <directory>./tests/Zf3IbmiToolkit/unit</directory>
+        </testsuite>
+        <testsuite name="IntegrationTests">
+            <directory>./tests/Zf3IbmiToolkit/integration</directory>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log type="coverage-html" target="build/php/coverage"/>
+    </logging>
+</phpunit>

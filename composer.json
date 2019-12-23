@@ -8,17 +8,29 @@
             "email": "chukShirley@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Club-Seiden/zf3-ibmiToolkit"
+        }
+    ],
     "require": {
         "php": "^5.6 || ^7.0",
-        "zendtech/ibmitoolkit": "^1.7.1",
+        "zendtech/ibmitoolkit": "v1.8.0",
         "zendframework/zend-mvc": "^3.0"
     },
     "require-dev": {
+        "phpunit/phpunit": "^6.5",
         "zendframework/zend-db": "^2.8"
     },
     "autoload": {
         "psr-4": {
             "ZfIbmiToolkit\\": "src/"
         }
+    },
+  "autoload-dev": {
+    "psr-4": {
+      "Zf3IbmiToolkitIntegrationTest\\": "tests/Zf3IbmiToolkit/integration"
     }
+  }
 }
