@@ -4,7 +4,6 @@ namespace ZfIbmiToolkit\Factory;
 
 use Interop\Container\ContainerInterface;
 use ToolkitApi\Toolkit;
-use Zend\Db\Adapter\Adapter;
 use Zend\ServiceManager\Factory\FactoryInterface;
 use Zend\ServiceManager\ServiceManager;
 
@@ -43,7 +42,7 @@ final class IbmiToolkitFactory implements FactoryInterface
             );
         }
 
-        $toolkit->setOptions($toolkitConfig);
+        $toolkit->setOptions($toolkitConfig['system']);
 
         return $toolkit;
     }

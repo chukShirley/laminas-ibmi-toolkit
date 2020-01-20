@@ -76,6 +76,12 @@ final class Bootstrap
             'ibmi_toolkit' => [
                 'system' => [
                     'transportType' => 'pdo',
+                    'XMLServiceLib' => 'QXMLSERV',
+                    'HelperLib' => 'QXMLSERV',
+                    'debug' => false,
+                    'trace' => false,
+                    'sbmjobParams' => 'QSYS/QSRVJOB/XTOOLKIT',
+                    'stateless' => true,
                 ],
                 'databaseAdapterService' => 'Zend\Db\Adapter\Adapter',
             ],

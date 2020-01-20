@@ -57,5 +57,8 @@ final class Zf3IbmiToolkitFactoryTest extends TestCase
 
         $toolkit = (new IbmiToolkitFactory)->__invoke($sm, '');
         $this->assertInstanceOf(Toolkit::class, $toolkit);
+        foreach ($sm->get('Config')['ibmi_toolkit']['system'] as $key => $value) {
+            $this->assertEquals($value, $toolkit->getOption($key));
+        }
     }
 }
