@@ -9,7 +9,7 @@ use Laminas\ServiceManager\ServiceManager;
 
 /**
  * Class IbmiToolkitFactory
- * @package ZfIbmiToolkit
+ * @package LaminasIbmiToolkit
  */
 final class IbmiToolkitFactory implements FactoryInterface 
 {

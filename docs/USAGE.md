@@ -9,7 +9,7 @@ namespace MyNamespace\Factory;
 
 use Interop\Container\ContainerInterface;
 use MyNamespace\MyClassController;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class MyClassFactory implements FactoryInterface 
 {

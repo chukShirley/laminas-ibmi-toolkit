@@ -1,4 +1,4 @@
 /vendor/
 /.idea/
 composer.lock
-/tests/Zf3IbmiToolkit/functional/config/integrationTestConfig.php
+/tests/LaminasIbmiToolkit/functional/config/integrationTestConfig.php

@@ -1,6 +1,6 @@
 <?php
 
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 
 return [
     'ibmi_toolkit' => [
@@ -9,24 +9,23 @@ return [
             /**
              * XML Service Library
              *
-             * Library where XTOOLKIT lives, most likely XMLSERVICE
-             * (testing) or ZENDSVR6 (production). Can be 'ZENDSVR6' or 'XMLSERVICE'
+             * Library where XTOOLKIT lives, most likely QXMLSERV
              */
-            'XMLServiceLib' => 'ZENDSVR6',
+            'XMLServiceLib' => 'QXMLSERV',
 
             /**
              * Helper Library
              *
              * Location of ZSXMLSRV "helper" service program. Overrides
              * ToolkitServiceSet's ZSTOOLKITLIB constant library of ZS
-             * "helper" service program. ZENDSVR or ZENDSVR6
+             * "helper" service program.
              */
-            'HelperLib' => 'ZENDSVR6',
+            'HelperLib' => 'QXMLSERV',
 
             /**
              * Debug
              *
-             * Sets PHP toolkit's debut mode on or off (true/valse)
+             * Sets PHP toolkit's debug mode on or off (true/valse)
              */
             'debug' => false,
 
@@ -36,7 +35,7 @@ return [
              * This log will grow large, so leave this false when you do not need to log
              * everything.
              */
-            'debugLogFile' => '/usr/local/zendsvr6/var/log/tkit_debug.log',
+            'debugLogFile' => '/usr/local/zendphp7/var/log/tkit_debug.log',
 
             /**
              * Enable XMLSERVICE trace
@@ -76,12 +75,13 @@ return [
             /**
              * Submit Options
              *
-             * Format: JOBDLIB/JOBD/JOBNAME. If not specified, will be
-             * ZENDSVR6/ZSVR_JOBD/XTOOLKIT
+             * Optionally provide submit options here
+             * Format: JOBDLIB/JOBD/JOBNAME.  If not specified, will be ZENDSVR6/ZSVR_JOBD/XTOOLKIT
+             * sbmjob_params = "ZENDSVR6/ZSVR_JOBD/XTOOLKIT"
              * Or specify another sbmjob combination, such as QSYS/QSRVJOB/XTOOLKIT,
              * if ZENDSVR6 library isn't present on the system or LPAR.
              */
-            // 'sbmjob_params' => 'ZENDSVR6/ZSVR_JOBD/XTOOLKIT',
+            // 'sbmjob_params' => 'QSYS/QSRVJOB/XTOOLKIT',
 
             /**
              * V5R4 OS Level
@@ -167,7 +167,7 @@ return [
              * Both CW and regular toolkit: warnings and errors will be written to the
              * logfile (CW and regular toolkit).
              */
-            'logfile' => '/usr/local/zendsvr6/var/log/toolkit.log',
+            'logfile' => '/usr/local/zendphp7/var/log/toolkit.log',
 
             /**
              * Log Compatibility Wrapper Connect

@@ -13,10 +13,10 @@
 >
     <testsuites>
         <testsuite name="UnitTests">
-            <directory>./tests/Zf3IbmiToolkit/unit</directory>
+            <directory>./tests/LaminasIbmiToolkit/unit</directory>
         </testsuite>
         <testsuite name="IntegrationTests">
-            <directory>./tests/Zf3IbmiToolkit/integration</directory>
+            <directory>./tests/LaminasIbmiToolkit/integration</directory>
         </testsuite>
     </testsuites>
     <logging>

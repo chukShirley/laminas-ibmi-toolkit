@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Zf3IbmiToolkitIntegrationTest;
+namespace LaminasIbmiToolkitIntegrationTest;
 
 use Interop\Container\ContainerInterface;
 use PHPUnit\Framework\TestCase;
 use ToolkitApi\Toolkit;
-use Zend\Db\Adapter\Adapter;
-use Zend\ServiceManager\ServiceManager;
-use ZfIbmiToolkit\Factory\IbmiToolkitFactory;
+use Laminas\Db\Adapter\Adapter;
+use Laminas\ServiceManager\ServiceManager;
+use LaminasIbmiToolkit\Factory\IbmiToolkitFactory;
 
-final class Zf3IbmiToolkitFactoryTest extends TestCase
+final class LaminasIbmiToolkitFactoryTest extends TestCase
 {
     public function testCanInstantiateToolkitWithDb2Resource()
     {

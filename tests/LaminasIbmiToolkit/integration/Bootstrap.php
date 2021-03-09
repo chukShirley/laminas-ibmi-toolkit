@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Zf3IbmiToolkitIntegrationTest;
+namespace LaminasIbmiToolkitIntegrationTest;
 
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 
 final class Bootstrap
 {
@@ -83,7 +83,7 @@ final class Bootstrap
                     'sbmjobParams' => 'QSYS/QSRVJOB/XTOOLKIT',
                     'stateless' => true,
                 ],
-                'databaseAdapterService' => 'Zend\Db\Adapter\Adapter',
+                'databaseAdapterService' => 'Laminas\Db\Adapter\Adapter',
             ],
         ];
     }
