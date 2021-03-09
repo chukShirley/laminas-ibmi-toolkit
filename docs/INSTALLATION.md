@@ -2,14 +2,14 @@
 
 * Install with Composer by running the following command from the project root:
 ```
-$ composer require club-seiden/zf3-ibmi-toolkit
+$ composer require club-seiden/laminas-ibmi-toolkit
 ```
 
 * Copy and rename configuration file
-    * Move zf3_ibmi_toolkit.global.php.dist from /config to your project's config/autoload directory
+    * Move laminas_ibmi_toolkit.global.php.dist from /config to your project's config/autoload directory
     * Rename the file by removing ".dist"
  
-* Add ZfIbmiToolkit to your list of modules
+* Add LaminasIbmiToolkit to your list of modules
     * example:
     ```
     <?php
@@ -18,7 +18,7 @@ $ composer require club-seiden/zf3-ibmi-toolkit
         'modules' => [
             'MyModule1',
             'MyModule2',
-            'ZfIbmiToolkit', // Add this line
+            'LaminasIbmiToolkit', // Add this line
         ],
     ];
     ```

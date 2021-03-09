@@ -1,11 +1,11 @@
 <?php
 
-namespace ZfIbmiToolkit\Factory;
+namespace LaminasIbmiToolkit\Factory;
 
 use Interop\Container\ContainerInterface;
 use ToolkitApi\Toolkit;
-use Zend\ServiceManager\Factory\FactoryInterface;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * Class IbmiToolkitFactory

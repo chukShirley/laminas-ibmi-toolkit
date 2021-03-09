@@ -1,6 +1,6 @@
 {
-    "name": "club-seiden/zf3-ibmi-toolkit",
-    "description": "Zend Framework 3 Module for the IBM i Toolkit",
+    "name": "chukshirley/laminas-ibmi-toolkit",
+    "description": "Laminas MVC Module for the IBM i Toolkit",
     "type": "library",
     "authors": [
         {
@@ -11,27 +11,27 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/Club-Seiden/zf3-ibmiToolkit"
+            "url": "https://github.com/chukShirley/laminas-ibmiToolkit"
         }
     ],
     "require": {
         "php": "^5.6 || ^7.0",
         "zendtech/ibmitoolkit": "^1.8.0",
-        "zendframework/zend-mvc": "^3.0",
-        "ext-pdo": "*"
+        "laminas/laminas-mvc": "^3.2",
+        "laminas/laminas-db": "^2.11"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5",
-        "zendframework/zend-db": "^2.8"
+        "ext-pdo": "*",
+        "phpunit/phpunit": "^6.5"
     },
     "autoload": {
         "psr-4": {
-            "ZfIbmiToolkit\\": "src/"
+            "LaminasIbmiToolkit\\": "src/"
         }
     },
   "autoload-dev": {
     "psr-4": {
-      "Zf3IbmiToolkitIntegrationTest\\": "tests/Zf3IbmiToolkit/integration"
+      "LaminasIbmiToolkitIntegrationTest\\": "tests/LaminasIbmiToolkit/integration"
     }
   }
 }

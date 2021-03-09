@@ -1,10 +1,10 @@
 <?php
 
-namespace ZfIbmiToolkit;
+namespace LaminasIbmiToolkit;
 
 /**
  * Class Module
- * @package ZfIbmiToolkit
+ * @package LaminasIbmiToolkit
  */
 class Module
 {
